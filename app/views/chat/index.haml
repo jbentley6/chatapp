@@ -1,0 +1,19 @@
+.container
+  .row
+    .panel.panel-primary
+      .panel-heading
+        Squitter Space
+        #count
+      .panel-body
+        .well.chat-panel
+          %ul#chat_list
+            -@messages.each do |message|
+              %li
+                ="#{message.name}:   #{message.message}" 
+  .form-group
+    %input.form-control#name{type: "text", placeholder: "Name"}
+  .form-group
+    %textarea.form-control#message{rows: "5", placeholder: "Message"}
+  .form-group
+    %button.btn.btn-lg.btn-default#send
+      Send
