@@ -1,4 +1,5 @@
 class MessageController  < WebsocketRails::BaseController
+  include ActionView::Helpers::SanitizeHelper
 
   def initialize_session
     @message_sent = 0

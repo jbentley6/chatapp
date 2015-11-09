@@ -22,6 +22,12 @@ $(document).ready ->
   $('#send').on 'click', ->
     text = $('#message').val()
     name = $('#name').val()
+    # if !name.trim()
+    #   alert "You must provide a name"
+    #   return
+    # else if !text.trim()
+    #   alert "Your message can't be blank"
+    #   return
     message =
       name: name
       text: text
