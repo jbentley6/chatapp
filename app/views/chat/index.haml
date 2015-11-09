@@ -1,4 +1,4 @@
-.container
+.container.small-top-margin
   .row
     .panel.panel-primary
       .panel-heading
@@ -6,10 +6,10 @@
         #count
       .panel-body
         .well.chat-panel
-          %ul#chat_list
+          %ul#chat-list
             -@messages.each do |message|
               %li
-                ="#{message.name}:   #{message.message}" 
+                ="#{message.name}:   #{message.message}"
   .form-group
     %input.form-control#name{type: "text", placeholder: "Name"}
   .form-group

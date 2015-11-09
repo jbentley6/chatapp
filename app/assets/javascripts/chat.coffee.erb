@@ -13,7 +13,7 @@ $(document).ready ->
     return
 
   channel.bind 'update_message', (message) ->
-    $('#chat_list').append("<li>#{message}</li>")
+    $('#chat-list').append("<li>#{message}</li>")
     d = $('.chat-panel')
     d.scrollTop(d.prop("scrollHeight"))
     return
