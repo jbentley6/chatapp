@@ -29,7 +29,7 @@ gem 'bootstrap-sass'
 
 gem 'autoprefixer-rails'
 
-gem 'puma'
+# gem 'puma'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
